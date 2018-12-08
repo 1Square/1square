@@ -14,6 +14,6 @@ public interface LoginDAO {
 	void delete(String userName);
 	
 	//Insert a record
-	Boolean insert(Login login);
+	void insert(Login login);
 	
 }

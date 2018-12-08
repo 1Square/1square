@@ -32,9 +32,8 @@ public class LoginDAOImpl implements LoginDAO{
 	}
 
 	@Override
-	public Boolean insert(Login login) {
-		Boolean result = (Boolean) sessionFactory.getCurrentSession().save(login);		
-		return result;
+	public void insert(Login login) {
+		sessionFactory.getCurrentSession().save(login);		
 	}
 	
 }

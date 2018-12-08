@@ -15,6 +15,7 @@ public class LoginSeviceImpl implements LoginService{
 	private LoginDAO loginDAO;
 
 	@Override
+	@Transactional
 	public Login get(String userName) {
 		return loginDAO.get(userName);
 	}
@@ -33,8 +34,8 @@ public class LoginSeviceImpl implements LoginService{
 
 	@Override
 	@Transactional
-	public Boolean insert(Login login) {
-		return loginDAO.insert(login);
+	public void insert(Login login) {
+		loginDAO.insert(login);
 	}
 
 }

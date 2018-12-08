@@ -1,4 +1,9 @@
 com\ngws\spring\model\Login.class
+com\ngws\spring\dao\LoginDAOImpl.class
+com\ngws\spring\service\LoginSeviceImpl.class
+com\ngws\spring\controller\LoginController.class
+com\ngws\spring\service\LoginService.class
+com\ngws\spring\dao\LoginDAO.class
 com\ngws\spring\config\AppConfig.class
 com\ngws\spring\config\MyWebAppInitializer.class
 com\ngws\spring\config\WebConfig.class

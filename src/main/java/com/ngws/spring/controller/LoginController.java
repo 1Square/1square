@@ -23,8 +23,8 @@ public class LoginController {
 	public ResponseEntity<?> insert(@RequestBody Login login) {
 		
 		System.out.println("the json value of login is :::::: "+login);
-		Boolean result = loginService.insert(login);
-		return ResponseEntity.ok().body("New user credentials has been created successfuly" + result);
+		loginService.insert(login);
+		return ResponseEntity.ok().body("New user credentials has been created successfuly *");
 		   
 	}
 	
@@ -32,7 +32,6 @@ public class LoginController {
 	public ResponseEntity<Login> get(@PathVariable("userName") String userName){
 		Login login = loginService.get(userName);
 		return ResponseEntity.ok().body(login);
-		
 	}
 
 }
