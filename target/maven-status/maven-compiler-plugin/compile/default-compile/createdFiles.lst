@@ -1,0 +1,4 @@
+com\ngws\spring\model\Login.class
+com\ngws\spring\config\AppConfig.class
+com\ngws\spring\config\MyWebAppInitializer.class
+com\ngws\spring\config\WebConfig.class
